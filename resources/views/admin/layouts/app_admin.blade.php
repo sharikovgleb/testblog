@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 <body>
     <div id="app">
@@ -27,7 +30,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                  
+
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
@@ -42,8 +45,9 @@
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                            role="button" aria-expanded="false">Blog</a>
                            <ul class="dropdown-menu" role="menu">
-                             <li><a href="#">Categories</a></li>
+                             <li><a href="{{route('admin.category.index')}}">Categories</a></li>
                              <li><a href="#">Materials</a></li>
+                             <li><a href="#"></a></li>
                            </ul>
                         </li>
                     </ul>
